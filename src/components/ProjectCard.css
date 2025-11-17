@@ -1,0 +1,89 @@
+.project-card {
+  text-align: center;
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.project-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.section-dark .project-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-yellow .project-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section-purple .project-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-author {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin: 2rem 0 1rem;
+  opacity: 0.8;
+}
+
+.scroll-indicator {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 40px 20px;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-label {
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+  }
+}
+

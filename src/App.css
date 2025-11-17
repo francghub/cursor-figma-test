@@ -1,0 +1,192 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Parallax effect */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.parallax-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+}
+
+/* Common section styles */
+.section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.section-yellow {
+  background-color: #f4d03f;
+  color: #000;
+}
+
+.section-purple {
+  background-color: #8b5cf6;
+  color: #fff;
+}
+
+.section-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Project card styles */
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.project-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    padding: 30px 20px;
+  }
+
+  .project-card h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+}
+

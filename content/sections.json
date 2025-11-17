@@ -1,0 +1,75 @@
+{
+  "header": {
+    "title": "The powerful social implications of software",
+    "paragraphs": [
+      "Political studies of the information society have often emphasized the way that technologies have opened up revolutionary potentials and accelerated old forms of exploitation, control, governing practices, labor, surveillance, and state/population interactions of the 20th century, positing the Internet and new communication technologies as sites of intense political contestation.",
+      "However, in spite of these analyses and critiques, code itself, along with specific protocols of code, have largely been characterized as neutral, invisible machinery producing effects as if they were 'natural' yet still remaining uninterrogated, as though the actual ways in which its works and is structured are unproblematic. Coding practices and software tools are most often examined only to the extent of the most basic changing that was coded into the creation of new machine worlds of networking."
+    ]
+  },
+  "research": {
+    "label": "Research",
+    "title": "Research printed with the Espresso Book Machine (ABC) in Amsterdam (NL).",
+    "link": {
+      "text": "View Publication",
+      "url": "#"
+    }
+  },
+  "padliography": {
+    "label": "Padliography",
+    "title": "An independent, self-hosted, media research",
+    "paragraphs": [
+      "Padliography is a portmanteau of the words "pad" and "bibliography." Throughout the year, we create Etherpads based upon specific themes, usually a type of publication, technology, or sort of cultural-expression space that is potentially important. We call each of these pads a "Padliography," a sort of research collection that is web-native and continuously updated.",
+      "Padliography is currently run at Padpadascha that is currently run by the Experimental Publishing program at Piet Zwart Institute. Established to act in terms of open-source media and research available, to both function together as an archive, following the model of a Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi model is that server issues result in greater loss of accessibility to others, resulting in greater costs of use. This is especially a problem with projects such as Padliography that are aimed at being accessible and free."
+    ]
+  },
+  "transcripts": {
+    "label": "Transcripts",
+    "title": "Transcripts from activists, journalists, hackers, archivists and developers.",
+    "link": {
+      "text": "View Archive",
+      "url": "#"
+    }
+  },
+  "amro": {
+    "label": "AMRO",
+    "title": "A collaborative network",
+    "paragraphs": [
+      "A platform to share generated material, to continue publication and discourse from the previous and present context. The Experimental Publishing program at Piet Zwart Institute has been involved as research fellows in AMRO festival, and have contributed to the development of ideas within the field, as well as the advancement of ideas for projects, etc.",
+      "AMRO is a festival about critical positions and artistic investigations at the intersection of art and digital technology, currently dealing with "the radical openness" both as a principle and as challenge. It is based by a variety of FLOSS-based cultures for artistic research and is currently being led by the cultural organization servus.at. Located in Linz (AT), AMRO positions itself against commercialization, creating an event that focuses on the interrelationships among art and digital technologies. The main target groups are artists, theoreticians, IT professionals, and students, as well as activists with interests in FLOSS initiatives and practices whose research focuses on alternative modes of production, alternative approaches to intellectual property rights, information design methods, and other interdisciplinary aspects of a 'open source' in thinking, doing, and showing. Accordingly, the presented works are intended to challenge 'openness' on different levels: technical specifications, open intellectual property, open access to knowledge, and open forms in thinking, and showing."
+    ]
+  },
+  "arts": {
+    "label": "AMRO",
+    "title": "Arts Meet Radical Openess is a festival about technology, hacking and design experiments located in Linz (AU).",
+    "author": "FRANC GONZÁLEZ",
+    "link": {
+      "text": "Learn More",
+      "url": "#"
+    }
+  },
+  "undesigning": {
+    "title": "Undesigning infrastructures.",
+    "paragraphs": [
+      "The aim is to explore how Wikimedia's ongoing Wikibase Infrastructure design and expansion of Wikidata can support practices in art publishing, documenting, and archiving, especially focusing upon experimental publishing practices. This supplement, of Wikidata formats and some time used tools, open source and maintained by a larger, dedicated to supporting and promoting digital production and preservation.",
+      "Since Wikimedia's format has made possible new infrastructure-building practices in the culture of digital artistic documentation and publication efforts of artists who seek sustainable non-profit modes of online preservation of their diverse practice. This has not only been important for artists' autonomous, non-institutional documentation, but also alternative forms of linking and indexing artistic works together in support of new modular and networked forms of publishing.",
+      "These are, as one might imagine, important aspects of art-documenting practices which had previously relied upon limited means of digital styloglyptic documenting in using archives in digital artistic documentation, and eventually design methods, artistic digital production methods, ways of artists, practices in the Portuguese areas of digital styloglyptic affirmation, digital artist-made design methods, and eventually self-published forms of aesthetic ideas and critical works. This has evolved to the art world of thinking in other spaces that inform such varied approaches to independent publishing, experimental publishing, art writing, and self-publishing as performative methods and performance."
+    ]
+  },
+  "gradshow": {
+    "label": "Show",
+    "title": "XPUB Gradshow Venue: Slash (Worm) Rotterdam (NL) / Year: 2018 media: xpub.nl/gradshow-2018-.webm/p4",
+    "link": {
+      "text": "View Archive",
+      "url": "#"
+    }
+  },
+  "library": {
+    "label": "Library",
+    "title": "View / download the project's online: videos, ebooks, and documentation generated.",
+    "link": {
+      "text": "View Library",
+      "url": "#"
+    }
+  }
+}
+

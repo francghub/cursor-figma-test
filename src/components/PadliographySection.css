@@ -1,0 +1,36 @@
+.padliography-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-nav {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.padliography-text p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .padliography-text p {
+    font-size: 0.9rem;
+  }
+}
+

@@ -1,0 +1,19 @@
+.amro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.amro-text p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .amro-text p {
+    font-size: 0.9rem;
+  }
+}
+
