@@ -1,32 +1,32 @@
-.undesigning-content {
-  max-width: 900px;
+.undesigning-text {
+  text-align: center; /* Center aligned as per PNG */
+  max-width: var(--container-text-width); /* 800px */
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .undesigning-text p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  color: #333;
+  font-size: var(--font-size-body); /* 18px */
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-secondary);
 }
 
 @media (max-width: 768px) {
   .undesigning-text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .undesigning-text p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 360px) {
-  .undesigning-content {
-    padding: 0 15px;
-  }
-
   .undesigning-text p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
   }
 }
-

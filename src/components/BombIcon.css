@@ -1,0 +1,40 @@
+.bomb-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-xl) auto;
+}
+
+.bomb-icon {
+  transition: var(--transition-base);
+  opacity: 0.8;
+}
+
+.bomb-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Section-specific colors */
+.section-dark .bomb-icon,
+.section-purple .bomb-icon {
+  stroke: var(--color-white);
+}
+
+.section-white .bomb-icon,
+.section-yellow .bomb-icon {
+  stroke: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .bomb-icon-container {
+    margin: var(--space-lg) auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .bomb-icon-container {
+    margin: var(--space-md) auto;
+  }
+}
+

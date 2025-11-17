@@ -1,33 +1,41 @@
 .project-card {
-  text-align: center;
-  padding: 60px 40px;
-  max-width: 900px;
+  position: relative;
+  width: 100%;
+  max-width: var(--container-text-width); /* 800px */
   margin: 0 auto;
+  padding: var(--section-padding-y-desktop) var(--space-2xl);
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden;
 }
 
 .project-label {
-  font-size: 0.85rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-widest);
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 3rem;
-  opacity: 0.8;
+  margin-bottom: var(--space-2xl);
+  opacity: 0.9;
 }
 
 .project-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 3rem;
+  font-size: var(--font-size-h1); /* 30px to match PNG */
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  margin-bottom: var(--space-2xl);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 .project-link {
   display: inline-block;
-  padding: 14px 32px;
+  padding: var(--space-sm) var(--space-xl);
   border: 2px solid currentColor;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-lg);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  transition: var(--transition-base);
 }
 
 .project-link:hover {
@@ -35,89 +43,64 @@
   transform: translateY(-2px);
 }
 
-.section-dark .project-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .section-yellow .project-link:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.section-purple .project-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .project-author {
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  margin: 2rem 0 1rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  margin: var(--space-xl) 0 var(--space-md);
   opacity: 0.8;
 }
 
 .scroll-indicator {
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
+  display: none; /* Hide default scroll indicator, using ScrollArrow component instead */
 }
 
 @media (max-width: 768px) {
   .project-card {
-    padding: 40px 20px;
+    padding: var(--section-padding-y-tablet) var(--space-lg);
   }
 
   .project-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
+}
 
-  .project-label {
-    font-size: 0.75rem;
-    margin-bottom: 2rem;
+@media (max-width: 480px) {
+  .project-card {
+    padding: var(--section-padding-y-mobile) var(--space-md);
   }
 }
 
 @media (max-width: 360px) {
   .project-card {
-    padding: 30px 15px;
+    padding: var(--space-2xl) var(--space-md);
   }
 
   .project-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-lg);
   }
 
   .project-label {
     font-size: 0.7rem;
     letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-lg);
   }
 
   .project-link {
-    padding: 12px 24px;
+    padding: var(--space-xs) var(--space-lg);
     font-size: 0.85rem;
   }
 
   .project-author {
     font-size: 0.8rem;
     letter-spacing: 1.5px;
-    margin: 1.5rem 0 0.75rem;
-  }
-
-  .scroll-indicator {
-    margin-top: 2rem;
-    font-size: 1.3rem;
+    margin: var(--space-md) 0 var(--space-sm);
   }
 }
-

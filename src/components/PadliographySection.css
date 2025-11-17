@@ -1,27 +1,21 @@
-.padliography-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section-nav {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 2rem 0;
-}
-
 .section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: var(--font-size-h2); /* 24px */
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2xl);
+  line-height: 1.5;
+}
+
+.padliography-text {
+  text-align: center; /* Center aligned as per PNG */
+  max-width: var(--container-text-width); /* 800px */
+  margin: 0 auto;
 }
 
 .padliography-text p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  text-align: left;
+  font-size: var(--font-size-body); /* 18px */
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-primary);
 }
 
 @media (max-width: 768px) {
@@ -30,29 +24,30 @@
   }
 
   .padliography-text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .padliography-text p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 360px) {
-  .padliography-content {
-    padding: 0 15px;
-  }
-
   .section-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.4;
-    margin-bottom: 1.5rem;
-  }
-
-  .section-nav {
-    margin: 1.5rem 0;
+    margin-bottom: var(--space-lg);
   }
 
   .padliography-text p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
   }
 }
-

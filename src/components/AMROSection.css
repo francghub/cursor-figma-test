@@ -1,31 +1,32 @@
-.amro-content {
-  max-width: 900px;
+.amro-text {
+  text-align: center; /* Center aligned as per PNG */
+  max-width: var(--container-text-width); /* 800px */
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .amro-text p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  text-align: left;
+  font-size: var(--font-size-body); /* 18px */
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-inverse);
 }
 
 @media (max-width: 768px) {
   .amro-text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .amro-text p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 360px) {
-  .amro-content {
-    padding: 0 15px;
-  }
-
   .amro-text p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
   }
 }
-

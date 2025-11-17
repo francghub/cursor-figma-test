@@ -1,10 +1,12 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
+import BombIcon from './BombIcon'
+import ScrollArrow from './ScrollArrow'
 import asset04 from '../assets/asset04.jpg'
 
 function ArtsSection() {
   return (
-    <section id="arts" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset04})` }}>
+    <section id="arts" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset04})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <FadeInSection>
         <div className="project-card">
           <div className="project-label">AMRO</div>
@@ -16,9 +18,10 @@ function ArtsSection() {
           </h1>
           <div className="project-author">FRANC GONZÁLEZ</div>
           <a href="#" className="project-link">Learn More</a>
-          <div className="scroll-indicator">↓</div>
+          <BombIcon size={36} color="#ffffff" />
         </div>
       </FadeInSection>
+      <ScrollArrow />
     </section>
   )
 }

@@ -1,11 +1,13 @@
 import './UndesigningSection.css'
 import FadeInSection from './FadeInSection'
+import BombIcon from './BombIcon'
+import ScrollArrow from './ScrollArrow'
 
 function UndesigningSection() {
   return (
     <section id="undesigning" className="section section-white">
-      <div className="section-content undesigning-content">
-        <div className="section-nav">↑</div>
+      <div className="section-content">
+        <ScrollArrow />
         <FadeInSection>
           <h2 className="section-title">Undesigning infrastructures.</h2>
           <div className="undesigning-text">
@@ -19,8 +21,9 @@ function UndesigningSection() {
               These are, as one might imagine, important aspects of art-documenting practices which had previously relied upon limited means of digital styloglyptic documenting in using archives in digital artistic documentation, and eventually design methods, artistic digital production methods, ways of artists, practices in the Portuguese areas of digital styloglyptic affirmation, digital artist-made design methods, and eventually self-published forms of aesthetic ideas and critical works. This has evolved to the art world of thinking in other spaces that inform such varied approaches to independent publishing, experimental publishing, art writing, and self-publishing as performative methods and performance.
             </p>
           </div>
+          <BombIcon size={36} color="#000000" />
         </FadeInSection>
-        <div className="section-nav">↓</div>
+        <ScrollArrow />
       </div>
     </section>
   )

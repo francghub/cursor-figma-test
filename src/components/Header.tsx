@@ -1,5 +1,7 @@
 import './Header.css'
 import FadeInSection from './FadeInSection'
+import BombIcon from './BombIcon'
+import ScrollArrow from './ScrollArrow'
 
 function Header() {
   return (
@@ -18,6 +20,8 @@ function Header() {
             </p>
           </div>
         </FadeInSection>
+        <BombIcon size={36} color="#000000" />
+        <ScrollArrow />
       </div>
     </header>
   )

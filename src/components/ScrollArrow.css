@@ -1,0 +1,40 @@
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-md) auto;
+  padding: var(--space-xs);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray-medium);
+  transition: var(--transition-base);
+}
+
+.scroll-arrow:hover {
+  color: var(--color-gray-dark);
+  transform: translateY(-3px);
+}
+
+.scroll-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Color variations based on section background */
+.section-dark .scroll-arrow,
+.section-purple .scroll-arrow {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-dark .scroll-arrow:hover,
+.section-purple .scroll-arrow:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .scroll-arrow {
+    margin: var(--space-sm) auto;
+  }
+}
+

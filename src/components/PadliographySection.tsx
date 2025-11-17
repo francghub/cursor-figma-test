@@ -1,11 +1,13 @@
 import './PadliographySection.css'
 import FadeInSection from './FadeInSection'
+import BombIcon from './BombIcon'
+import ScrollArrow from './ScrollArrow'
 
 function PadliographySection() {
   return (
     <section id="padliography" className="section section-yellow">
-      <div className="section-content padliography-content">
-        <div className="section-nav">↑</div>
+      <div className="section-content">
+        <ScrollArrow />
         <FadeInSection>
           <h2 className="section-title">An independent, self-hosted, media research</h2>
           <div className="padliography-text">
@@ -16,8 +18,9 @@ function PadliographySection() {
               Padliography is currently run at Padpadascha that is currently run by the Experimental Publishing program at Piet Zwart Institute. Established to act in terms of open-source media and research available, to both function together as an archive, following the model of a Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi model is that server issues result in greater loss of accessibility to others, resulting in greater costs of use. This is especially a problem with projects such as Padliography that are aimed at being accessible and free.
             </p>
           </div>
+          <BombIcon size={36} color="#000000" />
         </FadeInSection>
-        <div className="section-nav">↓</div>
+        <ScrollArrow />
       </div>
     </section>
   )

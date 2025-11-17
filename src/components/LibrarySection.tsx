@@ -1,11 +1,13 @@
 import './LibrarySection.css'
 import FadeInSection from './FadeInSection'
+import BombIcon from './BombIcon'
+import ScrollArrow from './ScrollArrow'
 
 function LibrarySection() {
   return (
     <section id="library" className="section section-white">
       <div className="section-content library-content">
-        <div className="section-nav">↑</div>
+        <ScrollArrow />
         <FadeInSection>
           <h2 className="section-title">Library</h2>
           <div className="library-grid">
@@ -36,13 +38,13 @@ function LibrarySection() {
             generated.
           </h1>
           <a href="#" className="project-link">View Library</a>
+          <BombIcon size={36} color="#000000" />
         </div>
         </FadeInSection>
-        <div className="section-nav">↓</div>
+        <ScrollArrow />
       </div>
     </section>
   )
 }
 
 export default LibrarySection
-
