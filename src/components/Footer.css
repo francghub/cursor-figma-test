@@ -1,7 +1,7 @@
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 60px 20px 20px;
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  padding: var(--space-4xl) var(--space-lg) var(--space-xl);
 }
 
 .footer-content {
@@ -14,25 +14,51 @@
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
 }
 
 .footer-section p {
-  font-size: 0.9rem;
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-secondary);
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3xl);
+  padding: var(--space-3xl) 0;
+  margin: var(--space-2xl) 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0);
   opacity: 0.8;
-  margin-bottom: 0.5rem;
+  transition: var(--transition-base);
+}
+
+.footer-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-lg);
 }
 
 .footer-bottom p {
-  font-size: 0.85rem;
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
   opacity: 0.6;
 }
 
@@ -47,32 +73,60 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer-logos {
+    gap: var(--space-xl);
+  }
+
+  .footer-logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logos {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer-logo {
+    height: 50px;
+  }
+}
+
 @media (max-width: 360px) {
   .footer {
-    padding: 30px 15px 15px;
+    padding: var(--space-2xl) var(--space-md) var(--space-lg);
   }
 
   .footer-content {
-    gap: 25px;
-    margin-bottom: 30px;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
   }
 
   .footer-section h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
+    font-size: var(--font-size-h3);
   }
 
   .footer-section p {
-    font-size: 0.85rem;
-    margin-bottom: 0.4rem;
+    font-size: var(--font-size-small);
+  }
+
+  .footer-logos {
+    gap: var(--space-md);
+    padding: var(--space-xl) 0;
+  }
+
+  .footer-logo {
+    height: 40px;
   }
 
   .footer-bottom {
-    padding-top: 15px;
+    padding-top: var(--space-md);
   }
 
   .footer-bottom p {
-    font-size: 0.75rem;
+    font-size: var(--font-size-label);
   }
 }
 

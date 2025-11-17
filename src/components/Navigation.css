@@ -32,7 +32,7 @@
 }
 
 .logo-svg {
-  height: 50px;
+  height: 45px; /* Adjusted for new bomb logo */
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -42,7 +42,7 @@
 }
 
 .navigation.scrolled .logo-svg {
-  height: 40px;
+  height: 35px; /* Smaller when scrolled */
 }
 
 .nav-links {
@@ -122,11 +122,11 @@
 
 @media (max-width: 360px) {
   .logo-svg {
-    height: 40px;
+    height: 35px;
   }
 
   .navigation.scrolled .logo-svg {
-    height: 35px;
+    height: 30px;
   }
 
   .nav-links {
