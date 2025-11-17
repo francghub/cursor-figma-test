@@ -1,12 +1,14 @@
 import './LibrarySection.css'
+import FadeInSection from './FadeInSection'
 
 function LibrarySection() {
   return (
     <section id="library" className="section section-white">
       <div className="section-content library-content">
         <div className="section-nav">↑</div>
-        <h2 className="section-title">Library</h2>
-        <div className="library-grid">
+        <FadeInSection>
+          <h2 className="section-title">Library</h2>
+          <div className="library-grid">
           <div className="library-item" style={{ backgroundColor: '#8B4513' }}>
             <div className="library-item-overlay">Item 1</div>
           </div>
@@ -35,6 +37,7 @@ function LibrarySection() {
           </h1>
           <a href="#" className="project-link">View Library</a>
         </div>
+        </FadeInSection>
         <div className="section-nav">↓</div>
       </div>
     </section>

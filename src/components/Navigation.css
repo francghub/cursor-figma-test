@@ -108,3 +108,23 @@
   }
 }
 
+@media (max-width: 360px) {
+  .nav-logo a {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    width: 200px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .mobile-menu-toggle span {
+    width: 22px;
+  }
+}
+

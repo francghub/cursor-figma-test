@@ -14,14 +14,6 @@ function Footer() {
           <p>Email: contact@example.com</p>
           <p>Rotterdam, Netherlands</p>
         </div>
-        <div className="footer-section">
-          <h3>Follow</h3>
-          <div className="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">GitHub</a>
-          </div>
-        </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2025 Experimental Publishing. All rights reserved.</p>

@@ -34,3 +34,25 @@
   }
 }
 
+@media (max-width: 360px) {
+  .padliography-content {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-nav {
+    margin: 1.5rem 0;
+  }
+
+  .padliography-text p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+}
+
