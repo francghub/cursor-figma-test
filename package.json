@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build:github": "VITE_BASE_PATH=/cursor-figma-test/ npm run build",
+    "build:netlify": "VITE_BASE_PATH=/ npm run build",
+    "build:vercel": "VITE_BASE_PATH=/ npm run build",
+    "preview": "vite preview",
+    "preview:github": "vite preview --base=/cursor-figma-test/"
   },
   "keywords": [],
   "author": "",
