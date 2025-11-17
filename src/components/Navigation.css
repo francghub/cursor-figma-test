@@ -26,11 +26,23 @@
 }
 
 .nav-logo a {
-  font-size: 1.2rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+}
+
+.logo-svg {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-svg:hover {
+  transform: scale(1.05);
+}
+
+.navigation.scrolled .logo-svg {
+  height: 40px;
 }
 
 .nav-links {
@@ -109,8 +121,12 @@
 }
 
 @media (max-width: 360px) {
-  .nav-logo a {
-    font-size: 1rem;
+  .logo-svg {
+    height: 40px;
+  }
+
+  .navigation.scrolled .logo-svg {
+    height: 35px;
   }
 
   .nav-links {

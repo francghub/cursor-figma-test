@@ -1,9 +1,10 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
+import asset03 from '../assets/asset03.jpg'
 
 function TranscriptsSection() {
   return (
-    <section id="transcripts" className="section section-dark parallax-section" style={{ backgroundImage: 'url(/images/transcripts.jpg)' }}>
+    <section id="transcripts" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset03})` }}>
       <FadeInSection>
         <div className="project-card">
           <div className="project-label">Transcripts</div>
