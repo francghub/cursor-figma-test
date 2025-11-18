@@ -4,12 +4,30 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.section-anchor:hover {
-  transform: translateX(-50%) scale(1.1);
+.section-anchor .logo-animated {
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.section-anchor .logo-animated:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Color variations for different section backgrounds */
+.section-white .section-anchor svg,
+.section-yellow .section-anchor svg {
+  color: var(--color-black);
+}
+
+.section-dark .section-anchor svg,
+.section-purple .section-anchor svg {
+  color: var(--color-white);
 }
 
 @media (max-width: 768px) {

@@ -1,13 +1,13 @@
 import './AMROSection.css'
 import FadeInSection from './FadeInSection'
-import LogoStatic from './LogoStatic'
+import LogoAnimated from './LogoAnimated'
 import SectionAnchor from './SectionAnchor'
 
 function AMROSection() {
   return (
-    <section id="amro" className="section section-purple" style={{ position: 'relative' }}>
-      <div className="section-content">
-        <SectionAnchor color="#ffffff" />
+    <section id="amro" className="section section-purple">
+      <div className="section-content" style={{ color: '#ffffff' }}>
+        <SectionAnchor />
         <FadeInSection>
           <h2 className="section-title">A collaborative network.</h2>
           <div className="amro-text">
@@ -18,8 +18,9 @@ function AMROSection() {
               The collaborative practices documented here were developed across multiple institutions—including the Willem de Kooning Academy, the Piet Zwart Institute, and partners in Rotterdam and beyond.
             </p>
           </div>
-          <LogoStatic size={80} color="#ffffff" />
+          <LogoAnimated size={80} />
         </FadeInSection>
+        <SectionAnchor />
       </div>
     </section>
   )

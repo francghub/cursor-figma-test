@@ -1,13 +1,13 @@
 import './LibrarySection.css'
 import FadeInSection from './FadeInSection'
-import LogoStatic from './LogoStatic'
+import LogoAnimated from './LogoAnimated'
 import SectionAnchor from './SectionAnchor'
 
 function LibrarySection() {
   return (
-    <section id="library" className="section section-white" style={{ position: 'relative' }}>
-      <div className="section-content library-content">
-        <SectionAnchor color="#000000" />
+    <section id="library" className="section section-white">
+      <div className="section-content library-content" style={{ color: '#000000' }}>
+        <SectionAnchor />
         <FadeInSection>
           <h2 className="section-title">Library</h2>
           <div className="library-grid">
@@ -34,9 +34,10 @@ function LibrarySection() {
           <h1 className="library-cta-title">
             View / download the project's online resources, videos, ebooks, and documentation generated.
           </h1>
-          <LogoStatic size={80} color="#000000" />
+          <LogoAnimated size={80} />
         </div>
         </FadeInSection>
+        <SectionAnchor />
       </div>
     </section>
   )

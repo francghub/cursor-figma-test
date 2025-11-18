@@ -1,11 +1,11 @@
 import './Header.css'
 import FadeInSection from './FadeInSection'
-import LogoStatic from './LogoStatic'
+import LogoAnimated from './LogoAnimated'
 
 function Header() {
   return (
     <header id="header" className="header section section-white">
-      <div className="section-content">
+      <div className="section-content" style={{ color: '#000000' }}>
         <FadeInSection>
           <h1>The powerful social implications of software.</h1>
         </FadeInSection>
@@ -19,7 +19,7 @@ function Header() {
             </p>
           </div>
         </FadeInSection>
-        <LogoStatic size={80} color="#000000" />
+        <LogoAnimated size={80} />
       </div>
     </header>
   )

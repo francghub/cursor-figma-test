@@ -1,21 +1,14 @@
-import LogoAnimated from './LogoAnimated';
-import './SectionAnchor.css';
+import './SectionAnchor.css'
+import LogoAnimated from './LogoAnimated'
 
 interface SectionAnchorProps {
-  color?: string;
+  className?: string;
 }
 
-export default function SectionAnchor({ color = "#000000" }: SectionAnchorProps) {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
+export default function SectionAnchor({ className = "" }: SectionAnchorProps) {
   return (
-    <div className="section-anchor">
-      <LogoAnimated size={24} color={color} onClick={scrollToTop} />
+    <div className={`section-anchor ${className}`}>
+      <LogoAnimated size={24} />
     </div>
   );
 }
