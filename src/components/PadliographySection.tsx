@@ -1,6 +1,6 @@
 import './PadliographySection.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 
 function PadliographySection() {
@@ -9,16 +9,16 @@ function PadliographySection() {
       <div className="section-content">
         <ScrollArrow />
         <FadeInSection>
-          <h2 className="section-title">An independent, self-hosted, media research</h2>
+          <h2 className="section-title">An independent, self-hosted media research practice.</h2>
           <div className="padliography-text">
             <p>
-              Padliography is a portmanteau of the words "pad" and "bibliography." Throughout the year, we create Etherpads based upon specific themes, usually a type of publication, technology, or sort of cultural-expression space that is potentially important. We call each of these pads a "Padliography," a sort of research collection that is web-native and continuously updated.
+              This research initiative combines alternative publishing, open-source tools, and experimental infrastructures. It investigates how individuals and collectives can work outside centralized platforms while maintaining secure, ethical, and sustainable digital workflows.
             </p>
             <p>
-              Padliography is currently run at Padpadascha that is currently run by the Experimental Publishing program at Piet Zwart Institute. Established to act in terms of open-source media and research available, to both function together as an archive, following the model of a Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi from file hosts available. One of the disadvantages of using this Raspberry Pi model is that server issues result in greater loss of accessibility to others, resulting in greater costs of use. This is especially a problem with projects such as Padliography that are aimed at being accessible and free.
+              Running a local server on a Raspberry Pi can be highly useful for small publishing groups—not only for hosting, but also for archiving and collaborative writing. Because the infrastructure is small-scale, affordable, and transparent, it becomes possible to bypass restrictive intellectual property policies.
             </p>
           </div>
-          <BombIcon size={36} color="#000000" />
+          <BombLogo size={80} color="#000000" animated={false} />
         </FadeInSection>
         <ScrollArrow />
       </div>

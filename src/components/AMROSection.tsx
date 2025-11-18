@@ -1,6 +1,6 @@
 import './AMROSection.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 
 function AMROSection() {
@@ -9,16 +9,16 @@ function AMROSection() {
       <div className="section-content">
         <ScrollArrow />
         <FadeInSection>
-          <h2 className="section-title">A collaborative network</h2>
+          <h2 className="section-title">A collaborative network.</h2>
           <div className="amro-text">
             <p>
-              A platform to share generated material, to continue publication and discourse from the previous and present context. The Experimental Publishing program at Piet Zwart Institute has been involved as research fellows in AMRO festival, and have contributed to the development of ideas within the field, as well as the advancement of ideas for projects, etc.
+              This network brings together designers, artists, activists, technologists, and researchers who explore alternative ways of producing, sharing, and maintaining knowledge. Through different chapters, the project highlights how open-source publishing systems, community infrastructures, and grassroots initiatives contribute to media literacy and digital sovereignty.
             </p>
             <p>
-              AMRO is a festival about critical positions and artistic investigations at the intersection of art and digital technology, currently dealing with "the radical openness" both as a principle and as challenge. It is based by a variety of FLOSS-based cultures for artistic research and is currently being led by the cultural organization servus.at. Located in Linz (AT), AMRO positions itself against commercialization, creating an event that focuses on the interrelationships among art and digital technologies. The main target groups are artists, theoreticians, IT professionals, and students, as well as activists with interests in FLOSS initiatives and practices whose research focuses on alternative modes of production, alternative approaches to intellectual property rights, information design methods, and other interdisciplinary aspects of a 'open source' in thinking, doing, and showing. Accordingly, the presented works are intended to challenge 'openness' on different levels: technical specifications, open intellectual property, open access to knowledge, and open forms in thinking, and showing.
+              The collaborative practices documented here were developed across multiple institutions—including the Willem de Kooning Academy, the Piet Zwart Institute, and partners in Rotterdam and beyond.
             </p>
           </div>
-          <BombIcon size={36} color="#ffffff" />
+          <BombLogo size={80} color="#ffffff" animated={false} />
         </FadeInSection>
         <ScrollArrow />
       </div>

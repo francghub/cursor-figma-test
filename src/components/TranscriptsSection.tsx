@@ -1,6 +1,6 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 import asset03 from '../assets/asset03.jpg'
 
@@ -11,13 +11,9 @@ function TranscriptsSection() {
         <div className="project-card">
           <div className="project-label">Transcripts</div>
           <h1 className="project-title">
-            Transcripts<br />
-            from activists, journalists,<br />
-            hackers, archivists<br />
-            and developers.
+            Transcripts from activists, journalists, hackers, archivists, and developers.
           </h1>
-          <a href="#" className="project-link">View Archive</a>
-          <BombIcon size={36} color="#ffffff" />
+          <BombLogo size={80} color="#ffffff" animated={false} />
         </div>
       </FadeInSection>
       <ScrollArrow />

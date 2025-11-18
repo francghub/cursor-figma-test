@@ -1,6 +1,6 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 import asset02 from '../assets/asset02.png'
 
@@ -12,13 +12,11 @@ function GradshowSection() {
           <div className="project-label">Show</div>
           <h1 className="project-title">
             XPUB Gradshow<br />
-            Venue: Slash (Worm)<br />
-            Rotterdam (NL) / Year: 2018<br />
-            media: xpub.nl/gradshow-<br />
-            2018-.webm/p4
+            Venue: Slash (Worm) Rotterdam (NL)<br />
+            Year: 2018<br />
+            media.xpub.nl/gradshow-2018-web.mp4
           </h1>
-          <a href="#" className="project-link">View Archive</a>
-          <BombIcon size={36} color="#ffffff" />
+          <BombLogo size={80} color="#ffffff" animated={false} />
         </div>
       </FadeInSection>
       <ScrollArrow />

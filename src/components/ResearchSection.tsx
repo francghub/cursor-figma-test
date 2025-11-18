@@ -1,6 +1,6 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 import asset01 from '../assets/asset01.jpg'
 
@@ -11,12 +11,9 @@ function ResearchSection() {
         <div className="project-card">
           <div className="project-label">Research</div>
           <h1 className="project-title">
-            Research printed with<br />
-            the Espresso Book Machine (ABC)<br />
-            in Amsterdam (NL).
+            Research printed with the Espresso Book Machine @ The American Book Center (ABC) in Amsterdam (NL), 2018.
           </h1>
-          <a href="#" className="project-link">View Publication</a>
-          <BombIcon size={36} color="#ffffff" />
+          <BombLogo size={80} color="#ffffff" animated={false} />
         </div>
       </FadeInSection>
       <ScrollArrow />

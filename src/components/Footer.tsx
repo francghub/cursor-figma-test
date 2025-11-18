@@ -6,13 +6,14 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Experimental Publishing</h3>
-          <p>Research & Media Archive</p>
+          <p>Master program</p>
+          <p>Willem de Kooning Academy</p>
           <p>Piet Zwart Institute</p>
         </div>
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: contact@example.com</p>
-          <p>Rotterdam, Netherlands</p>
+          <p>Rotterdam University of Applied Sciences</p>
+          <p>info@example.com</p>
         </div>
       </div>
       

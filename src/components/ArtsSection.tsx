@@ -1,6 +1,6 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 import asset04 from '../assets/asset04.jpg'
 
@@ -11,14 +11,9 @@ function ArtsSection() {
         <div className="project-card">
           <div className="project-label">AMRO</div>
           <h1 className="project-title">
-            Arts Meet Radical Openess<br />
-            is a festival about technology,<br />
-            hacking and design experiments<br />
-            located in Linz (AU).
+            Arts Meet Radical Openness is a festival about technology, hacking, and design experiments, located in Linz (AT).
           </h1>
-          <div className="project-author">FRANC GONZÁLEZ</div>
-          <a href="#" className="project-link">Learn More</a>
-          <BombIcon size={36} color="#ffffff" />
+          <BombLogo size={80} color="#ffffff" animated={false} />
         </div>
       </FadeInSection>
       <ScrollArrow />

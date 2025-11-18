@@ -1,6 +1,6 @@
 import './Header.css'
 import FadeInSection from './FadeInSection'
-import BombIcon from './BombIcon'
+import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
 
 function Header() {
@@ -8,19 +8,19 @@ function Header() {
     <header id="header" className="header section section-white">
       <div className="section-content">
         <FadeInSection>
-          <h1>The powerful social implications of software</h1>
+          <h1>The powerful social implications of software.</h1>
         </FadeInSection>
         <FadeInSection delay={0.2}>
           <div className="header-text">
             <p>
-              Political studies of the information society have often emphasized the way that technologies have opened up revolutionary potentials and accelerated old forms of exploitation, control, governing practices, labor, surveillance, and state/population interactions of the 20th century, positing the Internet and new communication technologies as sites of intense political contestation.
+              Publication of <em>Software Studies: Altering Our Code</em> shows how open-source tools, self-hosting, and independent infrastructures allow cultural workers to rethink the politics of media.
             </p>
             <p>
-              However, in spite of these analyses and critiques, code itself, along with specific protocols of code, have largely been characterized as neutral, invisible machinery producing effects as if they were 'natural' yet still remaining uninterrogated, as though the actual ways in which its works and is structured are unproblematic. Coding practices and software tools are most often examined only to the extent of the most basic changing that was coded into the creation of new machine worlds of networking.
+              By exploring issues such as platform centralization, digital safety, and the ways software shapes society, the project examines how alternative tools give individuals greater autonomy and control over information sharing.
             </p>
           </div>
         </FadeInSection>
-        <BombIcon size={36} color="#000000" />
+        <BombLogo size={80} color="#000000" animated={false} />
         <ScrollArrow />
       </div>
     </header>
