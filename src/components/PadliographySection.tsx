@@ -1,13 +1,13 @@
 import './PadliographySection.css'
 import FadeInSection from './FadeInSection'
-import BombLogo from './BombLogo'
-import ScrollArrow from './ScrollArrow'
+import LogoStatic from './LogoStatic'
+import SectionAnchor from './SectionAnchor'
 
 function PadliographySection() {
   return (
-    <section id="padliography" className="section section-yellow">
+    <section id="padliography" className="section section-yellow" style={{ position: 'relative' }}>
       <div className="section-content">
-        <ScrollArrow />
+        <SectionAnchor color="#000000" />
         <FadeInSection>
           <h2 className="section-title">An independent, self-hosted media research practice.</h2>
           <div className="padliography-text">
@@ -18,13 +18,11 @@ function PadliographySection() {
               Running a local server on a Raspberry Pi can be highly useful for small publishing groups—not only for hosting, but also for archiving and collaborative writing. Because the infrastructure is small-scale, affordable, and transparent, it becomes possible to bypass restrictive intellectual property policies.
             </p>
           </div>
-          <BombLogo size={80} color="#000000" animated={false} />
+          <LogoStatic size={80} color="#000000" />
         </FadeInSection>
-        <ScrollArrow />
       </div>
     </section>
   )
 }
 
 export default PadliographySection
-

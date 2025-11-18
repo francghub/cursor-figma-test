@@ -1,6 +1,6 @@
 import './Header.css'
 import FadeInSection from './FadeInSection'
-import LogoAnimated from './LogoAnimated'
+import LogoStatic from './LogoStatic'
 
 function Header() {
   return (
@@ -19,11 +19,10 @@ function Header() {
             </p>
           </div>
         </FadeInSection>
-        <LogoAnimated size={80} />
+        <LogoStatic size={80} color="#000000" />
       </div>
     </header>
   )
 }
 
 export default Header
-

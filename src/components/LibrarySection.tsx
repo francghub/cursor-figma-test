@@ -1,13 +1,13 @@
 import './LibrarySection.css'
 import FadeInSection from './FadeInSection'
-import BombLogo from './BombLogo'
-import ScrollArrow from './ScrollArrow'
+import LogoStatic from './LogoStatic'
+import SectionAnchor from './SectionAnchor'
 
 function LibrarySection() {
   return (
-    <section id="library" className="section section-white">
+    <section id="library" className="section section-white" style={{ position: 'relative' }}>
       <div className="section-content library-content">
-        <ScrollArrow />
+        <SectionAnchor color="#000000" />
         <FadeInSection>
           <h2 className="section-title">Library</h2>
           <div className="library-grid">
@@ -34,10 +34,9 @@ function LibrarySection() {
           <h1 className="library-cta-title">
             View / download the project's online resources, videos, ebooks, and documentation generated.
           </h1>
-          <BombLogo size={80} color="#000000" animated={false} />
+          <LogoStatic size={80} color="#000000" />
         </div>
         </FadeInSection>
-        <ScrollArrow />
       </div>
     </section>
   )
