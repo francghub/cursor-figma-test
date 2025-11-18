@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navigation.css'
-import Logo from './Logo.svg'
+import logoSvg from '../assets/logo.svg'
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,7 +28,7 @@ function Navigation() {
       <div className="nav-container">
         <div className="nav-logo">
           <a href="#header" onClick={(e) => { e.preventDefault(); scrollToSection('header') }}>
-            <img src={Logo} alt="Research Archive Logo" className="logo-svg" />
+            <img src={logoSvg} alt="Research Archive Logo" className="logo-svg" />
           </a>
         </div>
 
