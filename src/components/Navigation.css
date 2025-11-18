@@ -31,8 +31,14 @@
   transition: opacity 0.3s ease;
 }
 
+.nav-logo a svg {
+  shape-rendering: geometricPrecision;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
 .nav-logo a:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .nav-links {
@@ -50,9 +56,10 @@
 
 .nav-links li a {
   color: #ffffff;
-  font-size: 1.25rem; /* 20px - matches PNG */
-  font-weight: 400;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500; /* Slightly bold for readability */
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  letter-spacing: 0.02em; /* Better kerning */
   position: relative;
   padding: 8px 0;
   transition: opacity 0.3s ease;

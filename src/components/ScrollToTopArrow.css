@@ -1,0 +1,46 @@
+.scroll-to-top-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem;
+  z-index: 5;
+}
+
+.scroll-to-top-arrow:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.scroll-to-top-arrow svg {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+/* Color adaptation for different sections */
+.section-white .scroll-to-top-arrow svg,
+.section-yellow .scroll-to-top-arrow svg {
+  color: var(--color-black);
+}
+
+.section-dark .scroll-to-top-arrow svg,
+.section-purple .scroll-to-top-arrow svg {
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top-arrow {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .scroll-to-top-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+}

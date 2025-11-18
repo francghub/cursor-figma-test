@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navigation.css'
-import LogoStatic from './LogoStatic'
+import LogoNav from './LogoNav'
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -51,8 +51,8 @@ function Navigation() {
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <a href="#header" onClick={(e) => { e.preventDefault(); scrollToSection('header') }}>
-            <LogoStatic size={40} className="logo-static" />
+          <a href="#intro" onClick={(e) => { e.preventDefault(); scrollToSection('intro') }}>
+            <LogoNav />
           </a>
         </div>
 

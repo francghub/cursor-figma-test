@@ -1,0 +1,22 @@
+.bomb-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-3xl) auto;
+}
+
+.bomb-logo-container svg {
+  transition: transform 0.3s ease;
+}
+
+.bomb-logo-container:hover svg {
+  transform: scale(1.05);
+}
+
+/* Ensure crisp rendering */
+.bomb-animated,
+.bomb-static {
+  shape-rendering: geometricPrecision;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}

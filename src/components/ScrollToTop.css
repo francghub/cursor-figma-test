@@ -1,0 +1,54 @@
+.scroll-to-top {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+/* Adapt color based on section background */
+.section-white .scroll-to-top svg,
+.section-yellow .scroll-to-top svg {
+  color: #000000;
+}
+
+.section-dark .scroll-to-top svg,
+.section-purple .scroll-to-top svg {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .scroll-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+

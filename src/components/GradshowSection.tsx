@@ -1,13 +1,13 @@
 import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
-import LogoAnimated from './LogoAnimated'
-import SectionAnchor from './SectionAnchor'
+import BombLogo from './BombLogo'
+import ScrollToTop from './ScrollToTop'
 import asset02 from '../assets/asset02.png'
 
 function GradshowSection() {
   return (
     <section id="gradshow" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset02})`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
-      <SectionAnchor />
+      <ScrollToTop />
       <FadeInSection>
         <div className="project-card" style={{ color: '#ffffff' }}>
           <div className="project-label">Show</div>
@@ -17,7 +17,8 @@ function GradshowSection() {
             Year: 2018<br />
             media.xpub.nl/gradshow-2018-web.mp4
           </h1>
-          <LogoAnimated size={80} />
+          <a href="#" className="project-link">View Archive</a>
+          <BombLogo animated={true} size={80} />
         </div>
       </FadeInSection>
     </section>

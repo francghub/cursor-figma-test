@@ -17,23 +17,17 @@ function Footer() {
         </div>
       </div>
       
-      <div className="footer-logos">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/2/22/Willem_de_Kooning_Academy_logo.png" 
-          alt="Willem de Kooning Academy" 
-          className="footer-logo"
-        />
-        <img 
-          src="https://pzwart.nl/wp-content/themes/pietzwart/assets/img/logo.svg" 
-          alt="Piet Zwart Institute" 
-          className="footer-logo"
-        />
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Hogeschool_Rotterdam_logo.svg" 
-          alt="Rotterdam University of Applied Sciences" 
-          className="footer-logo"
-        />
-      </div>
+          <div className="footer-logos">
+            <svg className="footer-logo" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="10" y="25" fill="#000000" fontSize="10" fontWeight="600">WdKA</text>
+            </svg>
+            <svg className="footer-logo" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="5" y="25" fill="#000000" fontSize="10" fontWeight="600">Piet Zwart</text>
+            </svg>
+            <svg className="footer-logo" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="15" y="25" fill="#000000" fontSize="10" fontWeight="600">HR</text>
+            </svg>
+          </div>
 
       <div className="footer-bottom">
         <p>&copy; 2025 Experimental Publishing. All rights reserved.</p>
