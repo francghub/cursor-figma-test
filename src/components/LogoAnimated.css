@@ -1,0 +1,42 @@
+.logo-animated-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  transition: transform 0.2s ease;
+}
+
+.logo-animated-container:hover {
+  transform: scale(1.1);
+}
+
+/* Sequential spark animation */
+@keyframes sparkBlink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.spark {
+  animation: sparkBlink 0.6s ease-in-out infinite;
+}
+
+.spark-1 {
+  animation-delay: 0s;
+}
+
+.spark-2 {
+  animation-delay: 0.2s;
+}
+
+.spark-3 {
+  animation-delay: 0.4s;
+}
+
+/* Section anchor positioning */
+.section-anchor {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}

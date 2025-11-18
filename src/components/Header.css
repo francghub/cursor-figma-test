@@ -1,32 +1,32 @@
 .header {
   padding-top: 180px;
-  padding-bottom: var(--section-padding-y-desktop); /* 100px */
+  padding-bottom: var(--section-padding-y-large); /* Large top margin as per PNG */
   text-align: center;
   margin-top: 0;
 }
 
 .header h1 {
-  font-size: var(--font-size-h1); /* 34px */
-  font-weight: var(--font-weight-semibold); /* 600 */
-  line-height: var(--line-height-normal); /* 1.45 */
-  letter-spacing: var(--letter-spacing-normal);
+  font-size: var(--font-size-h1); /* 46px */
+  font-weight: 700; /* Bold */
+  line-height: var(--line-height-tight); /* 1.1 - Tight leading */
+  letter-spacing: var(--letter-spacing-tight);
   margin-bottom: var(--space-3xl);
-  max-width: var(--container-text-width); /* 760px */
+  max-width: var(--container-text-width); /* 800px */
   margin-left: auto;
   margin-right: auto;
 }
 
 .header-text {
-  max-width: var(--container-text-width); /* 760px */
+  max-width: var(--container-text-width); /* 800px */
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
 
 .header-text p {
-  font-size: var(--font-size-body); /* 17px */
-  font-weight: var(--font-weight-light); /* 300 */
-  line-height: var(--line-height-relaxed); /* 1.55 */
+  font-size: var(--font-size-body); /* 20px */
+  font-weight: 400; /* Regular */
+  line-height: var(--line-height-relaxed); /* 1.6 */
   letter-spacing: var(--letter-spacing-normal);
   margin-bottom: var(--space-xl);
   color: var(--color-text-secondary);
@@ -34,7 +34,7 @@
 
 .header-text em {
   font-style: italic;
-  font-weight: var(--font-weight-normal);
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {

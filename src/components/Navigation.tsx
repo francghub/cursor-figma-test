@@ -1,14 +1,28 @@
 import { useState, useEffect } from 'react'
 import './Navigation.css'
-import logoSvg from '../assets/logo.svg'
+import LogoStatic from './LogoStatic'
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
+      
+      // Determine active section
+      const sections = ['research', 'transcripts', 'amro', 'gradshow', 'library']
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(sectionId)
+            break
+          }
+        }
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -18,37 +32,52 @@ function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      const yOffset = -80
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+      window.scrollTo({ top: y, behavior: 'smooth' })
       setIsMobileMenuOpen(false)
     }
   }
+
+  const navItems = [
+    { id: 'research', label: 'Research' },
+    { id: 'transcripts', label: 'Transcripts' },
+    { id: 'amro', label: 'AMRO' },
+    { id: 'gradshow', label: 'Show' },
+    { id: 'library', label: 'Library' },
+  ]
 
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
           <a href="#header" onClick={(e) => { e.preventDefault(); scrollToSection('header') }}>
-            <img src={logoSvg} alt="Research Archive Logo" className="logo-svg" />
+            <LogoStatic size={40} className="logo-static" />
           </a>
         </div>
 
-        <button 
+        <button
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className={isMobileMenuOpen ? 'open' : ''}></span>
+          <span className={isMobileMenuOpen ? 'open' : ''}></span>
+          <span className={isMobileMenuOpen ? 'open' : ''}></span>
         </button>
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          <li><a href="#research" onClick={(e) => { e.preventDefault(); scrollToSection('research') }}>Research</a></li>
-          <li><a href="#padliography" onClick={(e) => { e.preventDefault(); scrollToSection('padliography') }}>Padliography</a></li>
-          <li><a href="#transcripts" onClick={(e) => { e.preventDefault(); scrollToSection('transcripts') }}>Transcripts</a></li>
-          <li><a href="#amro" onClick={(e) => { e.preventDefault(); scrollToSection('amro') }}>AMRO</a></li>
-          <li><a href="#arts" onClick={(e) => { e.preventDefault(); scrollToSection('arts') }}>Arts</a></li>
-          <li><a href="#library" onClick={(e) => { e.preventDefault(); scrollToSection('library') }}>Library</a></li>
+          {navItems.map(item => (
+            <li key={item.id}>
+              <a 
+                href={`#${item.id}`} 
+                onClick={(e) => { e.preventDefault(); scrollToSection(item.id) }}
+                className={activeSection === item.id ? 'active' : ''}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
@@ -56,4 +85,3 @@ function Navigation() {
 }
 
 export default Navigation
-

@@ -1,0 +1,22 @@
+.section-anchor {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.section-anchor.light {
+  color: #000000;
+}
+
+.section-anchor.dark {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section-anchor {
+    top: -16px;
+  }
+}
+

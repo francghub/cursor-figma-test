@@ -1,19 +1,36 @@
 .undesigning-text {
-  text-align: center; /* Center aligned as per PNG */
   max-width: var(--container-text-width); /* 800px */
   margin: 0 auto;
 }
 
 .undesigning-text p {
-  font-size: var(--font-size-body); /* 18px */
-  line-height: 1.5;
+  font-size: var(--font-size-body); /* 20px */
+  font-weight: 400;
+  line-height: 1.6; /* 1.5-1.6 from PNG */
   margin-bottom: var(--space-xl);
   color: var(--color-text-secondary);
+}
+
+/* Two-column paragraph layout from PNG */
+.undesigning-text .paragraph-normal {
+  text-align: left;
+}
+
+.undesigning-text .paragraph-indented {
+  /* Slightly shifted right as per PNG */
+  text-align: left;
+  padding-left: 3rem;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 @media (max-width: 768px) {
   .undesigning-text p {
     font-size: 1rem;
+  }
+
+  .undesigning-text .paragraph-indented {
+    padding-left: 1.5rem;
   }
 }
 
@@ -21,12 +38,8 @@
   .undesigning-text p {
     font-size: 0.95rem;
   }
-}
 
-@media (max-width: 360px) {
-  .undesigning-text p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: var(--space-md);
+  .undesigning-text .paragraph-indented {
+    padding-left: 0;
   }
 }

@@ -2,11 +2,13 @@ import './ProjectCard.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
 import ScrollArrow from './ScrollArrow'
+import SectionAnchor from './SectionAnchor'
 import asset01 from '../assets/asset01.jpg'
 
 function ResearchSection() {
   return (
-    <section id="research" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset01})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section id="research" className="section section-dark parallax-section" style={{ backgroundImage: `url(${asset01})`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+      <SectionAnchor darkBackground={true} />
       <FadeInSection>
         <div className="project-card">
           <div className="project-label">Research</div>
