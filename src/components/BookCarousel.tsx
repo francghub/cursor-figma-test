@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { books } from '../data/books'
-import BookCard from './BookCard'
+import BookCardWithCover from './BookCardWithCover'
+import { preloadCovers } from '../utils/bookCovers'
 import './BookCarousel.css'
 
 export default function BookCarousel() {
@@ -24,6 +25,11 @@ export default function BookCarousel() {
   const goToNext = () => {
     goToBook(currentIndex + 1)
   }
+
+  // Preload covers on mount
+  useEffect(() => {
+    preloadCovers(books);
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
@@ -97,7 +103,7 @@ export default function BookCarousel() {
             const isCenter = index === currentIndex
             
             return (
-              <BookCard
+              <BookCardWithCover
                 key={book.id}
                 book={book}
                 isCenter={isCenter}
