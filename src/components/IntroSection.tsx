@@ -22,7 +22,7 @@ function IntroSection() {
             </div>
             
             <p className="intro-paragraph-main">
-              The visual identity I developed reflects this tension. The logo reinterprets "1-O": the "O" is drawn as a bomb, with an asterisk nestled inside as its fuse. It transforms a typographic mark of citation into an explosive footnote—a visual protest signaling that information is always being interrupted, contested, and rewritten.
+              The visual identity I developed reflects this tension. The logo reinterprets "1-O": the "O" is drawn as a bomb, with an asterisk positioned at its fuse. The asterisk—normally a marker of citation, correction, or hidden footnotes—becomes a symbol of encrypted communication, media censorship, and underground channels of truth. It turns a typographic aside into an explosive interruption: a visual protest showing that information is never neutral, always contested, and constantly rewritten.
             </p>
             
             <p className="intro-paragraph-main">
