@@ -15,10 +15,11 @@ export default function BookCardWithCover({ book, isCenter, offset, onClick }: B
   const [imageError, setImageError] = useState(false);
   
   // Calculate scale and opacity based on distance from center
-  const scale = isCenter ? 1 : Math.max(0.7, 1 - Math.abs(offset) * 0.15);
-  const opacity = isCenter ? 1 : Math.max(0.5, 1 - Math.abs(offset) * 0.2);
-  const translateZ = isCenter ? 0 : -50 * Math.abs(offset);
-  const rotateY = offset * 15; // Subtle rotation for 3D effect
+  // Center: 1.2x scale, Sides: 0.8x scale with rotation
+  const scale = isCenter ? 1.2 : Math.max(0.8, 1 - Math.abs(offset) * 0.1);
+  const opacity = isCenter ? 1 : Math.max(0.6, 1 - Math.abs(offset) * 0.15);
+  const translateZ = isCenter ? 0 : -80 * Math.abs(offset);
+  const rotateY = isCenter ? 0 : offset * 25; // More pronounced rotation for sides
   
   const style = {
     transform: `
