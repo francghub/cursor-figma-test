@@ -1,12 +1,10 @@
 import './UndesigningSection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
-import ScrollToTopArrow from './ScrollToTopArrow'
 
 function UndesigningSection() {
   return (
     <section id="undesigning" className="section section-white">
-      <ScrollToTopArrow />
       <div className="section-content" style={{ color: '#000000' }}>
         <FadeInSection>
           <h2 className="section-title">Unmapping infrastructures.</h2>

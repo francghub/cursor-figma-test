@@ -1,12 +1,10 @@
 import './IntroSection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
-import ScrollToTopArrow from './ScrollToTopArrow'
 
 function IntroSection() {
   return (
     <section id="intro" className="section section-white intro-section">
-      <ScrollToTopArrow />
       <div className="section-content">
         <FadeInSection>
           <h1 className="intro-title">The powerful social implications of software.</h1>
@@ -14,37 +12,16 @@ function IntroSection() {
         
         <FadeInSection delay={0.2}>
           <div className="intro-text">
-            <p className="intro-paragraph-first">
-              This project began as an investigation into the role of news media, censorship, 
-              and digital infrastructures during the events surrounding the 1st of October (1-O) 
-              referendum in Catalonia. The logo—a circular "O" with an asterisk inside, drawn as 
-              a fuse-powered symbol—represents both:
-            </p>
-            
-            <ul className="intro-list">
-              <li><strong>1-O</strong> (the date itself, encoded as a glyph), and</li>
-              <li>the <strong>asterisk</strong> as a typographic mark for special attention, annotation, citation, and interruption.</li>
-            </ul>
-            
             <p className="intro-paragraph-main">
-              Together, the symbol functions as a visual protest: an explosive footnote, a reminder 
-              that information is always edited, contested, and rewritten.
+              My research began in the friction of the Catalan referendum on October 1st (1-O). While the region faced political upheaval, I saw the controversial collision of news media, censorship, and digital infrastructure as the urgent, perfect backdrop for my study development. The chaos provided a live testing ground for understanding how history is edited in real-time.
             </p>
             
             <p className="intro-paragraph-main">
-              The project explores how software, servers, archives, and algorithmic tools shape not 
-              only what we read, but how events are framed, repeated, and altered over time. By 
-              experimenting with self-hosted systems, RSS-based tracking engines, and open-source 
-              publishing workflows, the research investigates how individuals and small collectives 
-              can build ethical, decentralized infrastructures for documenting rapidly changing 
-              political realities.
+              The visual identity I developed reflects this tension. The logo reinterprets "1-O": the "O" is drawn as a bomb, with an asterisk nestled inside as its fuse. It transforms a typographic mark of citation into an explosive footnote—a visual protest signaling that information is always being interrupted, contested, and rewritten.
             </p>
             
             <p className="intro-paragraph-main">
-              The platform brings together research experiments, transcripts, collaborative networks, 
-              artistic interventions, and documentation of events such as AMRO (Arts Meet Radical 
-              Openness) and the XPUB Graduate Show, forming a living archive of tools, knowledge, 
-              and social practices around media literacy and digital autonomy.
+              Through this project, I explore how algorithms and archives frame our reality. By building my own self-hosted systems and RSS tracking engines, I am defining how individuals can create ethical, decentralized infrastructures. This platform is my living archive—collecting experiments from AMRO and the XPUB Graduate Show—designed to reclaim digital autonomy.
             </p>
           </div>
         </FadeInSection>

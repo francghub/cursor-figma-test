@@ -1,12 +1,10 @@
 import './AMROSection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
-import ScrollToTop from './ScrollToTop'
 
 function AMROSection() {
   return (
     <section id="amro" className="section section-purple">
-      <ScrollToTop />
       <div className="section-content" style={{ color: '#ffffff' }}>
         <FadeInSection>
           <h2 className="section-title">A collaborative network.</h2>

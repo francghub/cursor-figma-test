@@ -1,12 +1,10 @@
 import './LibrarySection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
-import ScrollToTop from './ScrollToTop'
 
 function LibrarySection() {
   return (
     <section id="library" className="section section-white">
-      <ScrollToTop />
       <div className="section-content library-content" style={{ color: '#000000' }}>
         <FadeInSection>
           <h2 className="section-title">Library</h2>
