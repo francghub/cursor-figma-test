@@ -1,32 +1,30 @@
 import './LibrarySection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
-import BookCarousel from './BookCarousel'
+import booksImage from '../assets/books.png'
 
 function LibrarySection() {
   return (
-    <section id="library" className="section section-white">
-      <div className="section-content library-content-wide" style={{ color: '#000000' }}>
-        <FadeInSection>
-          <h2 className="section-title">Library</h2>
-          <p className="library-description">
-            Explore our collection of research materials on internet politics, digital activism, 
-            and network culture. Drag or swipe to browse through books.
-          </p>
-        </FadeInSection>
-        
-        <BookCarousel />
-        
-        <FadeInSection delay={0.3}>
-          <div className="library-cta">
-            <h3 className="library-cta-title">
-              Access the complete archive of research materials, transcripts, and documentation.
-            </h3>
-            <a href="#" className="section-cta-button">Explore Full Library</a>
-          </div>
-          <BombLogo animated={true} size={80} />
-        </FadeInSection>
-      </div>
+    <section 
+      id="library" 
+      className="section section-dark parallax-section" 
+      style={{ 
+        backgroundImage: `url(${booksImage})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        position: 'relative' 
+      }}
+    >
+      <FadeInSection>
+        <div className="project-card" style={{ color: '#ffffff' }}>
+          <div className="project-label">Library</div>
+          <h1 className="project-title">
+            A collection of research materials exploring internet politics, digital activism, and network culture.
+          </h1>
+          <a href="#" className="section-cta-button">Explore Full Library</a>
+          <BombLogo size={80} animated={true} />
+        </div>
+      </FadeInSection>
     </section>
   )
 }
