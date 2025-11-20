@@ -2,7 +2,6 @@ import './IntroSection.css'
 import FadeInSection from './FadeInSection'
 import BombLogo from './BombLogo'
 import bombGraphic from '../assets/1-O-bomb.png'
-import decentralizedNetwork from '../assets/Decentralized-network.png'
 
 function IntroSection() {
   return (
@@ -18,9 +17,8 @@ function IntroSection() {
               My research began in the friction of the Catalan referendum on October 1st (1-O). While the region faced political upheaval, I saw the controversial collision of news media, censorship, and digital infrastructure as the urgent, perfect backdrop for my study development. The chaos provided a live testing ground for understanding how history is edited in real-time.
             </p>
             
-            <div className="intro-images">
+            <div className="intro-image-container">
               <img src={bombGraphic} alt="1-O visual identity - bomb graphic" className="intro-image" />
-              <img src={decentralizedNetwork} alt="Decentralized network infrastructure" className="intro-image" />
             </div>
             
             <p className="intro-paragraph-main">
