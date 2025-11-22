@@ -27,6 +27,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 100vh; /* Ensure full viewport height for proper centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .parallax-section::before {
@@ -48,6 +52,13 @@
 @media (max-width: 768px) {
   .parallax-section {
     background-attachment: scroll;
+    min-height: 80vh; /* Slightly smaller on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-section {
+    min-height: 70vh; /* Smaller on mobile for better scrolling */
   }
 }
 
